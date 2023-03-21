@@ -1,0 +1,1077 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+body{
+    font-family: 'Arista 2.0 Light', sans-serif;
+
+}
+
+.header {
+
+    background-color: black;
+    height: 90px;
+
+    width: 100%;
+    top: 0;
+    left: 0;
+}
+
+.nav{
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav-link{
+    color: gold;
+    text-decoration: none;
+
+}
+
+.logo{
+
+    width: 300px;
+    height: 90px;
+    font-size: 30px;
+    font-weight: bold;
+    padding: 0 40px;
+    line-height: 90px;
+}
+
+.nav-menu{
+    display: flex;
+    margin-right: 40px;
+    list-style: none;
+}
+
+.nav-menu-item{
+    font-size: 18px;
+    margin: 0 10px;
+    line-height: 90px;
+    text-transform: uppercase;
+    width: max-content;
+    font-weight: bold;
+}
+
+.nav-menu-link{
+    padding: 8px 12px;
+    border-radius: 3px;
+}
+
+.nav-menu-link:hover{
+    font-weight: bold;
+    color: black;
+    background-color: goldenrod;
+    transition: 0.5s;
+}
+
+.nav-toggle{
+    color: gold;
+    background: none;
+    border: none;
+    font-size: 30px;
+    padding: 0 20px;
+    line-height: 60px;
+    display: none;
+    cursor: pointer;
+}
+
+@media (max-width:768px){
+    
+    body{
+        padding-top: 70px;
+    }
+        
+    .header {
+        height: 70px;
+    }
+
+    
+    .logo{
+    
+        width: 250px;
+        height: 100px;
+        font-size: 25px;
+        padding: 0 20px;
+        line-height: 70px;
+    }
+    
+    .nav-menu{
+        flex-direction: column;
+        align-items: center;
+        margin-right: 0px;
+        background-color: gray;
+        position: fixed;
+        left: 0;
+        top: 70px;
+        width: 100%;
+        padding: 0px 0;
+        height: calc(100% - 70px);
+        overflow-y: auto;
+        left: 100%;
+        transition: left 0.3ms;
+
+    }
+    
+    .nav-menu-item{
+
+        line-height: 80px;
+    }
+
+    .nav-menu-link{
+        font-weight: bold;
+
+    }
+
+    .nav-toggle{
+        display: block;
+    }
+
+    .nav-menu_visible{
+
+        left: 0;
+    }
+
+    .nav-toggle:focus:not(:focus-visible){
+        outline: none;
+    }
+
+    
+}
+
+/*seccion principal*/
+
+.slider{
+
+    width: 100%;
+    height: 100%;
+    margin: auto;
+    overflow: hidden;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 0%;
+    margin-bottom: 0;
+}
+
+.slider ul{
+
+    display: flex;
+    padding: 0;
+    width: 400%;
+    animation: automatico 20s infinite alternate;
+    animation-timing-function: linear;
+}
+
+.slider li{
+
+    width: 100%;
+    list-style: none;
+}
+
+.slider img{
+
+    width: 100%;
+    height: 200%;
+    margin: 0 0;
+    
+}
+
+@media (min-width:768px) {
+    .slider img{
+        height: 550px;
+    }
+    
+}
+
+@keyframes automatico{
+
+    0%{margin-left: 0;}
+    20%{margin-left: 0;}
+
+    25%{margin-left: -100%;}
+    45%{margin-left: -100%;}
+
+    50%{margin-left: -200%;}
+    70%{margin-left: -200%;}
+
+    75%{margin-left: -300%;}
+    100%{margin-left: -300%;}
+
+}
+
+/*primera seccion*/
+
+.first_seccion{
+
+    display: flex;
+    margin: 0;
+    background-color: black;
+} 
+
+.left_section{
+    width: 50%;
+    height: 100vh;
+    background-color: gray;
+    padding: 30px;
+}
+
+.right_section{
+
+
+    width: 50%;
+    height: 100vh;
+    margin-top: 0;
+    }
+
+.left_section h1{
+    color: black;
+    font-size: 50px;
+    width: 80%;
+    margin: auto;
+    margin-bottom: 50px;
+    padding-top: 10px;
+}
+
+.left_section p{
+
+    font-size: 25px;
+    line-height: 30px;
+    width: 80%;
+    margin: auto;
+    color: gold;
+    margin: auto;
+    margin-bottom: 20px;
+}
+
+.left_section h2{
+
+    color: black;
+    font-size: 40px;
+    width: 100%;
+    margin: auto;
+    margin-bottom: 40px;
+    padding-top: 40px;
+}
+
+.left_section a{
+
+    border: 1px solid white;
+    padding: 20px;
+}
+
+/*login*/
+
+.first-section-login{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    width: 100%;
+    margin: 0;
+    background-color: white;
+
+}
+
+.left-section-login{
+
+    width: 50%;
+    height: 100vh;
+    background-color: gray;
+}
+
+.left-section-login img{
+
+    width: 100%;
+    height: 100%;
+}
+
+
+.right-section-login{
+
+    width: 50%;
+    height: 100vh;
+    margin-top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #3f2002;
+    background-size: cover;
+    background-position: center;
+
+
+}
+
+.form-box{
+    position: relative;
+    width: 400px;
+    height: 450px;
+    background: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 15px;
+}
+
+.form-box img{
+
+    width: 300px;
+    height: 100px;
+
+}
+
+.input-box{
+    position: relative;
+    margin: 30px 0;
+    width: 310px;
+    border-bottom: 2px solid white;
+}
+
+.input-box label{
+    position: absolute;
+    top: 50%;
+    left: 5px;
+    transform: translateY(-50%);
+    color: white;
+    font-size: 1em;
+    pointer-events: none;
+    transition: .5s;
+}
+
+input:focus ~ label,
+input:valid ~ label{
+    top: -5px;
+
+}
+
+.input-box input{
+    width: 100%;
+    height: 50px;
+    background: transparent;
+    border: none;
+    outline: none;
+    font-size: 1em;
+    padding: 0 35px 0 5px;
+    color: white;
+
+}
+
+.input-box i{
+
+    position: absolute;
+    right: 8px;
+    color: white;
+    font-size: 1.2em;
+    top: 20px;
+}
+
+.forget{
+    margin: -15px 0 15px;
+    font-size: .9em;
+    color: white;
+    display: flex;
+    justify-content: center;
+}
+
+.forget label input{
+    margin-right: 3px;
+}
+
+.forget label a{
+    color: white;
+    text-decoration: none;
+}
+
+.forget label a:hover{
+    text-decoration: underline;
+}
+
+.btnlogin{
+    width: 100%;
+    height: 40px;
+    border-radius: 40px;
+    background: white;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-size: 1em;
+    font-weight: 600;
+}
+
+.register{
+    font-size: .9em;
+    color: white;
+    text-align: center;
+    margin: 25px 0 10px;
+}
+
+.register p a{
+    text-decoration: none;
+    color: white;
+    font-weight: 600;
+}
+
+.register p a:hover{
+
+    text-decoration: underline;
+}
+
+/*registro*/
+
+.first-section-registro{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    width: 100%;
+    margin: 0;
+
+}
+
+.left-section-registro{
+
+    width: 50%;
+    height: 100vh;
+    background-color: gray;
+}
+
+.left-section-registro img{
+
+    width: 100%;
+    height: 100%;
+}
+
+
+.right-section-registro{
+
+    width: 50%;
+    height: 100vh;
+    margin-top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: 	#3f2002;
+
+}
+
+.form-box-registro{
+    position: relative;
+    width: 400px;
+    height: 650px;
+    background: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 10px;
+    margin: 20px
+}
+
+.form-box-registro img{
+
+    width: 300px;
+    height: 100px;
+
+}
+
+.input-box-registro{
+    position: relative;
+    margin: 15px 0;
+    width: 310px;
+    border-bottom: 2px solid white;
+}
+
+.input-box-registro label{
+    position: absolute;
+    top: 50%;
+    left: 5px;
+    transform: translateY(-50%);
+    color: white;
+    font-size: 1em;
+    pointer-events: none;
+    transition: .5s;
+}
+
+.input-box-registro:focus ~ label,
+.input-box-registro:valid ~ label
+.input-box-registro:valid ~ label{
+    top: -5px;
+
+}
+
+.input-box-registro input{
+    width: 100%;
+    height: 50px;
+    background: transparent;
+    border: none;
+    outline: none;
+    font-size: 1em;
+    padding: 0 35px 0 5px;
+    color: white;
+
+}
+
+.input-box-registro i{
+
+    position: absolute;
+    right: 8px;
+    color: white;
+    font-size: 1.2em;
+    top: 20px;
+}
+
+.forget-registro{
+    margin: -15px 0 15px;
+    font-size: .9em;
+    color: white;
+    display: flex;
+    justify-content: center;
+}
+
+.forget-registro label input{
+    margin-right: 3px;
+}
+
+.forget-registro label a{
+    color: white;
+    text-decoration: none;
+}
+
+.forget-registro label a:hover{
+    text-decoration: underline;
+}
+
+.btnlogin-registro{
+    width: 100%;
+    height: 40px;
+    border-radius: 40px;
+    background: white;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-size: 1em;
+    font-weight: 600;
+}
+
+.register-registro{
+    font-size: .9em;
+    color: white;
+    text-align: center;
+    margin: 25px 0 10px;
+}
+
+.register-registro p a{
+    text-decoration: none;
+    color: white;
+    font-weight: 600;
+}
+
+.register-registro p a:hover{
+
+    text-decoration: underline;
+}
+
+
+
+
+
+
+/*reserva*/
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+
+    
+}
+
+label {
+    display: block;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.modulo-reserva[type="text"],
+.modulo-reserva[type="email"],
+.modulo-reserva[type="date"],
+.modulo-reserva[type="time"],
+.modulo-reserva[type="number"],
+
+textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 5px;
+    margin-bottom: 15px;
+}
+
+input[type="submit"] {
+    background-color: gold;
+    color: black;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+    
+
+}
+
+input[type="submit"]:hover {
+    background-color: goldenrod;
+}
+
+/*seccion contacto*/
+
+.formulario-contacto {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.contactenos[type="text"],
+.contactenos[type="email"],
+
+textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 5px;
+    margin-bottom: 15px;
+}
+
+input[type="submit"] {
+    background-color: gold;
+    color: black;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+input[type="submit"]:hover {
+    background-color: goldenrod;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*tarjetas*/
+.card img{
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    border-radius: 5px;
+    height: 100;
+}
+
+.card{
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 15px;
+    margin: 15px;
+    justify-content: space-between;
+}
+
+.card a{
+
+    text-decoration: none;
+    color: gold;
+    font-weight: bold;
+    background-color: gray;
+    padding: 8px;
+    border-radius: 5px;
+    transition: all 0,5s;
+}
+
+.card a:hover{
+    background-color:rgb(68, 64, 64)
+}
+
+.body-card{
+    font-size: 12px;
+    width: 280px;
+    height: 350px;
+    border: solid gray 1px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    border-radius: 5px;
+    background-color: black;
+
+}
+
+.description{
+    padding: 25px;
+    margin-bottom: 10px;
+    font-size: 18px;
+}
+
+.card b{
+
+    color: gold;
+    font-size: 20px;
+}
+
+/*seccion comentario*/
+
+.reviews{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    margin-bottom: 30px;
+    margin-top: 20px;
+}
+
+.testimonials-header{
+    margin: 50px 0;
+    padding: 10px 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.testimonials-header h1{
+
+    font-size: 2.9rem;
+    font-weight: 500;background-color: gray;
+    color: gold;
+    padding: 10px 20px;
+}
+
+.testimonials-header span{
+
+    font-size: 2.2rem;
+    color: black;
+    margin-bottom: 25px;
+    text-transform: uppercase;
+}
+
+.testimonials-container{
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.testimonial-box{
+    width: 500px;
+    box-shadow: 2px 2px 20px gold;
+    background-color: rgb(158, 157, 157);
+    padding: 20px;
+    margin: 15px;
+    cursor: pointer;
+}
+
+.perfil img{
+    margin: 0;
+    padding: 0;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    overflow: hidden;
+    object-fit: center;
+}
+
+.perfil{
+    display: flex;
+    align-items: center;
+}
+
+.name-user{
+    display: flex;
+    flex-direction: column;
+
+}
+
+.name-user strong{
+    color: black;
+    font-size: 1.3rem;
+    margin-left: 5px;
+}
+
+.name-user span{
+    color: gold;
+    font-size: 1.1rem;
+}
+
+.reseñas{
+    color: yellow;
+}
+
+.box-top{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.customer-comments p{
+
+    color:white;
+}
+
+::selection{
+    color: white;
+    background-color: black;
+}
+
+.galery{
+
+    padding: 0;
+    padding-left: 0;
+    margin: 0;
+    box-sizing: border-box;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    width: 95%;
+    margin: auto;
+    margin-left: 30px;
+    grid-gap: 10px;
+    padding: 40px 8px;
+    overflow: hidden;
+}
+
+.galery > a{
+    display: block;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 0 6px gold;
+}
+
+.galery img{
+
+    width: 100%;
+    vertical-align: top;
+    height: 300px;
+    object-fit: cover;
+    margin: 0;
+    padding: 0;
+    transition: transform 0.5s;
+}
+
+.galery a:hover img{
+    filter: blur(2px);
+    transform: rotate(10deg) scale(1.3);
+
+}
+
+.galery-h1{
+
+    font-weight: 400;
+    text-align: center;
+    padding: 20px 0;
+    font-size: 40px;
+    color: gold;
+    font-weight: bold;
+}
+
+.linea{
+    background: gray;
+    height: 5px;
+    width: 100%;
+    display: block;
+}
+
+
+
+
+.light-box{
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: rgba(0,0,0,.5);
+    transition: transform .3s ease-in-out;
+    width: 100%;
+    height: 100vh;
+    z-index: 1000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: scale(0);
+    
+}
+
+.light-box img{
+    width: 90vh;
+    max-height: 60vh;
+}
+
+.light-box:target{
+    transform: scale(1);
+}
+
+.close{
+    display: block;
+    position: absolute;
+    top:40px;
+    right: 40px;
+    background: gold;
+    color: black;
+    text-decoration: none;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 50%;
+    font-weight: bold;
+}
+
+.next{
+    display: block;
+    background-color: gold;
+    color: black;
+    height: 30px;
+    width: 30px;
+    line-height: 30px;
+    text-decoration: none;
+    text-align: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*pie de pagina*/
+
+.footer-page{
+
+    width: 100%;
+    background-color: black;
+}
+
+.group-one {
+
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 50px;
+    padding: 45px 0px;
+    
+}
+
+.box figure{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box img{
+
+    width: 250px;
+}
+
+.box h2{
+
+    color:#ffffff;
+    margin-bottom: 25px;
+    font-size: 20px;
+}
+
+.box p {
+
+    color: goldenrod ;
+    margin-bottom: 10px;
+}
+
+.social-networt a{
+
+    display: inline-block;
+    text-decoration: none;
+    width: 45px;
+    height: 45px;
+    line-height: 45px;
+    color: goldenrod;
+    margin-right: 10px;
+    background-color: black;
+    text-align: center;
+    transition: all 300ms ease;
+
+}
+
+.social-networt a:hover{
+
+    color: gold;
+}
+
+.group-two{
+
+    background-color: gray;
+    padding: 15px 10px;
+    text-align: center;
+    color:gold;
+}
+
+.group-two small{
+
+    font-size: 15px;
+}
+
+@media screen and (max-width: 800px){
+
+    .group-one {
+
+        width: 90%;
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 30px;
+        padding: 35px 0px;
+    }
+}
+
